@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -35,4 +36,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Margin{
+  margin-top: 10px;
+}
+
+.HeaderBackground{
+  background: #282c34;
+  color: white
+}
+.BodyBackground{
+  background-color: grey;
+  min-height: 100%
+}
+html{
+  background-color: grey;
 }

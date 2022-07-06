@@ -20,13 +20,13 @@ export default function HomePage() {
                     </Col>
                 </Row>
             </header>
-            <body className='BodyBackground'>
+            <body className='BodyBackground' style={{paddingTop: '10px'}}>
                 <Row >
                     <Col sm={{
                         offset: 3,
                         size: 6
                     }}>
-                        <Card>
+                        <Card >
                             <CardHeader>
                                 <h3> Product Description</h3>
                             </CardHeader>
@@ -63,7 +63,7 @@ export default function HomePage() {
                     }}>
                         <Card>
                             <CardHeader>
-                                <h3> Demostration</h3>
+                                <h3> Demonstration</h3>
                             </CardHeader>
                             <CardBody style={{textAlign: 'center'}}>
                             <iframe width="500" height="300" src="https://www.youtube.com/embed/b2sKbZ90LSk" title="Algo-Viz 0.0.1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -81,7 +81,12 @@ export default function HomePage() {
                                 <h3>Download</h3>
                             </CardHeader>
                             <CardBody>
-                                download link
+                                download links
+                                <List>
+                                    <li>.ZIP download <a href='https://github.com/JacobWencloff/Super-Awesome-Python-App-Visualizer/archive/refs/tags/Algo-Viz-v.0.0.2.zip'> HERE </a></li>
+                                    <li>.TAR download <a href='https://github.com/JacobWencloff/Super-Awesome-Python-App-Visualizer/archive/refs/tags/Algo-Viz-v.0.0.2.tar.gz'> HERE </a></li>
+                                </List>
+                                <p>Wanna check out our github? find us <a href='https://github.com/JacobWencloff/Super-Awesome-Python-App-Visualizer'>HERE</a></p>
                             </CardBody>
                         </Card>
                     </Col>

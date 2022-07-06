@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Algo-Viz
+### A Algorithm Vizualizer 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Algo-Viz is a desktop application intended to provide a visual representation of the inner workings of commonly used algorithms. 
 
-## Available Scripts
+## Current Features
+---
+- A completely maluable data set
+    - Size
+    - Top range
+    - Bottom range
+- Ability to hot swap algorithms
+- Ability to increase / decrease the speed of an animation
+- Acess to view to source algorithm being used
+- Reset feature, letting the user reset the algorithm and graph 
 
-In the project directory, you can run:
+## Supporting Libraries 
+---
+Algo-Viz has two dependecies that attribute all of the programs functionality. PyImGUI allows for the creation of the entire user interface, this library is supported by the OpenGL, the second library. The launcher for the Algo-Viz application is created via a python packaged called PyInstaller, this software interprets the project file, and constructs a executable file based on the dependencies and child files attached to it.
 
-### `npm start`
+## Supported Algorithms 
+- Merge Sort
+- Quick Sort
+- A* Path finding 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## INSTRUCTIONS !!!
+---
+This project is currently not a production build ! that means the file has no executable, and must be launched from the terminal!
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Directions
+- Ensure you have python installed on your PC
+    - open your terminal and type ```$python3 --version``` or ```$Spython --version``` to ensure you have python on your local machine
+    - If python is not installed, please install it like so
+        - MAC -> ```$ brew install python```
+        - Linux -> ```$ sudo apt install python3 ```
+        - Windows -> https://www.python.org/downloads/
 
-### `npm test`
+- Once python has been varified on your local machine, please install pyimgui using your terminal
+    - ```$ pip install pyimgui[full] ```
+    - this will install all dependencies needed for the program to operate 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Lastly, please navigate to the directory storing the project on your local storage within your terminal, and run the command ```$ python3 ./main.py```
